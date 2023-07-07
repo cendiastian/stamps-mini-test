@@ -1,12 +1,14 @@
-// Import Axios module
+// Import module
 const axios = require('axios');
+require('dotenv').config();
 
-// API KEY dari akun saya
-const APIKEY = 'ba9259c5b4aef50726ecb5fdab2f4123'
+// API KEY dari env
+const apiKey = process.env.API_KEY;
+
 // function untuk mengambil data ramalan cuaca dari API OpenWeatherMap
 function getWeatherForecast() {
-    // return new Promise(function(resolve, reject) {
-      const url = 'http://api.openweathermap.org/data/2.5/forecast?q=Jakarta,id&appid='+APIKEY;
+  // return new Promise(function(resolve, reject) {
+      const url = 'http://api.openweathermap.org/data/2.5/forecast?q=Jakarta,id&appid='+apiKey;
       return axios.get(url)
       .then(response => {
         if (response.status !== 200) {
