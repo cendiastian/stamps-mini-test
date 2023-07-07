@@ -19,10 +19,10 @@ This repository contains my solutions for the Stampsindo Mini Test as part of th
 
 3. Task 2 - forecast:
    - Open the `forecast.js` file to view the JavaScript code for Task 2.
-   - The program uses the Axios module to fetch weather forecast data from the OpenWeatherMap API.
-   - Make sure you have the Axios module installed in your project (`npm install axios`) before running the program.
-   - Replace the `API_KEY` variable in the code with your own OpenWeatherMap API key.
-   - Modify the `location` variable to specify the desired location for the weather forecast.
+   - The program uses the Axios module and the dotenv module.
+   - Before running the program, make sure you have the required modules installed by running `npm install` in your terminal.
+   - Create a `.env` file in the root directory and add your OpenWeatherMap API key as `API_KEY=YOUR_API_KEY`.
+   - Modify the `location` variable in the code to specify the desired location for the weather forecast.
    - Run the program in a JavaScript runtime environment to see the weather forecast output.
 
 ## Modules Used
