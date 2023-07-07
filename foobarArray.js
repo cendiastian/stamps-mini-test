@@ -25,13 +25,13 @@ numbers.forEach(function(number) {
   }
 
   if (number % 3 === 0 && number % 5 === 0) {
-    result += "FooBar ";
+    result += "FooBar, ";
   } else if (number % 3 === 0) {
-    result += "Foo ";
+    result += "Foo, ";
   } else if (number % 5 === 0) {
-    result += "Bar ";
+    result += "Bar, ";
   } else {
-    result += number + " ";
+    result += number + ", ";
   }
 });
 
